@@ -4,4 +4,7 @@
     <p>{{propellers}}</p>
     <p>{{maxSpeed}}</p>
     <a href="/drones/{{_id}}/edit">Update Drone Information</a>
+    <form action="/drones/{{_id}}/delete" method="POST">
+        <button type="submit">Delete</button>
+    </form>
 {{/each}}
